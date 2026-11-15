@@ -101,24 +101,25 @@ ul, ol { list-style: none; }
 .seccion { padding-block: clamp(48px, 5vw, 72px) clamp(40px, 4.2vw, 60px); }
 .seccion--negra { background: var(--negro-puro); color: var(--blanco); }
 .titulo-seccion { font-family: var(--titular); font-weight: 400; font-size: clamp(44px, 6.1vw, 88px); line-height: 1.15; text-transform: uppercase; text-align: center; }
-.destacado { font-family: var(--maquina); font-size: clamp(21px, 2.5vw, 36px); line-height: 1.12; text-align: center; max-width: 884px; margin-inline: auto; }
-.destacado--ancho { max-width: none; }
-.prosa { font-size: clamp(18px, 2.05vw, 29px); line-height: 1.2; }
+.destacado { font-family: var(--maquina); font-size: clamp(20px, 1.95vw, 28px); line-height: 1.25; text-align: center; max-width: 884px; margin-inline: auto; }
+.destacado--ancho { max-width: 884px; }
+.prosa { font-size: clamp(18px, 1.46vw, 21px); line-height: 1.5; max-width: 760px; margin-inline: auto; }
 .prosa p + p { margin-top: 1.2em; }
 .apertura .destacado { margin-top: clamp(20px, 2.6vw, 38px); }
 .apertura .prosa { margin-top: clamp(28px, 3.4vw, 50px); }
 
 /* ---------- Las voces ---------- */
 .voces { padding-bottom: clamp(56px, 6vw, 96px); }
-.voces__lista { margin-top: clamp(36px, 7.8vw, 112px); display: grid; gap: clamp(48px, 8.6vw, 126px); }
-.voz { display: grid; grid-template-columns: 1fr 1fr; column-gap: 20px; align-items: start; }
-.voz__foto { width: 100%; max-width: 460px; aspect-ratio: 460 / 785; object-fit: cover; background: #d9d9d9; }
-.voz__nombre { font-family: var(--titular); font-weight: 400; font-size: clamp(40px, 6.1vw, 88px); line-height: 1.1; text-transform: uppercase; }
-.voz__bio { margin-top: clamp(10px, 1.2vw, 18px); font-size: clamp(18px, 2.08vw, 30px); line-height: 1.2; }
+.voces__lista { margin-top: clamp(36px, 5.6vw, 80px); display: grid; gap: clamp(48px, 6.4vw, 92px); }
+.voz { display: grid; grid-template-columns: 400px minmax(0, 500px); justify-content: center; column-gap: clamp(28px, 4.4vw, 64px); align-items: center; }
+.voz--invertida { grid-template-columns: minmax(0, 500px) 400px; }
+.voz__foto { width: 100%; max-width: 400px; aspect-ratio: 4 / 5; object-fit: cover; background: #d9d9d9; }
+.voz__nombre { font-family: var(--titular); font-weight: 400; font-size: clamp(40px, 5vw, 72px); line-height: 1.1; text-transform: uppercase; }
+.voz__bio { margin-top: clamp(10px, 1.2vw, 18px); font-size: clamp(17px, 1.39vw, 20px); line-height: 1.5; max-width: 500px; }
 .voz--invertida .voz__foto { order: 2; justify-self: end; }
-.voz--corta .voz__foto { aspect-ratio: 460 / 630; }
+.voz--corta .voz__foto { aspect-ratio: 4 / 5; }
 @media (max-width: 760px) {
-  .voz { grid-template-columns: 1fr; row-gap: 20px; }
+  .voz, .voz--invertida { grid-template-columns: 1fr; row-gap: 20px; }
   .voz--invertida .voz__foto { order: 0; justify-self: start; }
   .voz__foto { max-width: 320px; aspect-ratio: 4 / 5; }
 }
