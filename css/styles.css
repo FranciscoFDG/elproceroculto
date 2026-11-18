@@ -193,6 +193,7 @@ ul, ol { list-style: none; }
 .cut__tag { position: absolute; left: 22px; bottom: -4px; padding: 4px 6px 2px; background: var(--papel); color: var(--negro); font-family: var(--maquina); font-size: 12px; line-height: 1.15; letter-spacing: 1.2px; text-transform: uppercase; box-shadow: 0 1px 0 rgba(0, 0, 0, .25); z-index: 2; }
 .cut--foto { background: #c9c6bd radial-gradient(rgba(11, 11, 11, .55) 1.1px, transparent 1.4px) 0 0 / 6px 6px; }
 .cut--foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.08); }
+.cut--color img { filter: none; }
 .cut--foto.sin-foto::after { content: "falta la foto"; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--maquina); font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--negro); }
 .recorte { padding: 34px 24px 40px; display: flex; flex-direction: column; justify-content: center; }
 .recorte p { font-family: var(--maquina); font-size: 19px; line-height: 1.34; }
