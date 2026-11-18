@@ -21,7 +21,6 @@ Exportar desde Figma y guardar en `assets/img/` con estos nombres exactos (JPG):
 
 | Archivo | Qué es | Medida sugerida |
 |---|---|---|
-| `02-foto.jpg` … `06-foto.jpg` | Foto de archivo para el recorte de cada capítulo | 560 × 700 (vertical 4:5) |
 | `voz-marchi.jpg`, `voz-rosso.jpg`, `voz-provendola.jpg`, `voz-pujol.jpg` | Retratos de "Las voces" | 920 × 1570 |
 | `cierre-charly-bn.jpg` | Foto en blanco y negro del cierre | 2880 de ancho |
 
