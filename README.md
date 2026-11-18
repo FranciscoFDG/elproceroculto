@@ -4,6 +4,7 @@ Sitio estático (HTML + CSS + JS, sin dependencias) armado a partir del prototip
 
 - `index.html` — landing (portada, apertura, las voces, cierre)
 - `capitulos.html` — los siete capítulos + archivo sonoro
+- `linea-del-tiempo.html` — línea del tiempo 1974–2001: discos de Charly y hechos del país
 - `entrevistas.html` — entrevistas a Alfredo Rosso y Sergio Marchi, pregunta por pregunta
 - `css/styles.css` — estilos compartidos
 - `js/main.js` — menú móvil, índice de capítulos, espacio reservado de fotos
